@@ -9,3 +9,6 @@ Massively Scalable Anomaly Detection with Apache Kafka, Cassandra and Kubernetes
 * [Anomalia Machina 8 - Production Kubernetes](https://www.instaclustr.com/anomalia-machina-8-production-application-deployment-kubernetes-massively-scalable-anomaly-detection-apache-kafka-cassandra/)
 * [Anomalia Machina 9 - Scaling Out](https://www.instaclustr.com/anomalia-machina-9-anomaly-detection-at-scale/)
 * [Anomalia Machina 10 - Final Results](https://www.instaclustr.com/anomalia-machina-10-final-results-massively-scalable-anomaly-detection-with-apache-kafka-and-cassandra/)
+
+## Instaclustr Open Source Project Status: SAMPLE
+- for further information see: https://www.instaclustr.com/support/documentation/announcements/instaclustr-open-source-project-status/
