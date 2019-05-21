@@ -1,4 +1,4 @@
-# AnomaliaMachina
+# Anomalia Machina
 Massively Scalable Anomaly Detection with Apache Kafka, Cassandra and Kubernetes - final code for **Instaclustr's Anomalia Machina Blog series**:
 
 * [Anomalia Machina 1 - Introduction](https://www.instaclustr.com/anomalia-machina-1-massively-scalable-anomaly-detection-with-apache-kafka-and-cassandra/)
