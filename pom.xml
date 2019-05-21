@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.instaclustr</groupId>
+  <artifactId>AnomaliaMachina</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>AnomaliaMachina Open Source version</name>
+  <dependencies>
+  
+  <!-- Cassandra and Kafka clients -->
+  	<dependency>
+  		<groupId>com.datastax.cassandra</groupId>
+  		<artifactId>cassandra-driver-core</artifactId>
+  		<version>3.5.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.kafka</groupId>
+  		<artifactId>kafka-clients</artifactId>
+  		<version>LATEST</version>
+  	</dependency>
+  	
+<!-- Prometheus The client -->
+<dependency>
+  <groupId>io.prometheus</groupId>
+  <artifactId>simpleclient</artifactId>
+  <version>0.5.0</version>
+</dependency>
+<!-- Hotspot JVM metrics-->
+<dependency>
+  <groupId>io.prometheus</groupId>
+  <artifactId>simpleclient_hotspot</artifactId>
+  <version>0.5.0</version>
+</dependency>
+<!-- Exposition HTTPServer-->
+<dependency>
+  <groupId>io.prometheus</groupId>
+  <artifactId>simpleclient_httpserver</artifactId>
+  <version>0.5.0</version>
+</dependency>
+<!-- Pushgateway exposition-->
+<dependency>
+  <groupId>io.prometheus</groupId>
+  <artifactId>simpleclient_pushgateway</artifactId>
+  <version>0.5.0</version>
+</dependency>
+
+<!-- OpenTracing -->
+<dependency>
+  	<groupId>io.opentracing</groupId>
+  	<artifactId>opentracing-mock</artifactId>
+  	<version>LATEST</version>
+  </dependency>
+   <dependency>
+  	<groupId>io.opentracing</groupId>
+  	<artifactId>opentracing-api</artifactId>
+  	<version>LATEST</version>
+  </dependency>
+   <dependency>
+  	<groupId>io.opentracing</groupId>
+  	<artifactId>opentracing-noop</artifactId>
+  	<version>LATEST</version>
+  </dependency>
+   <dependency>
+  	<groupId>io.opentracing</groupId>
+  	<artifactId>opentracing-util</artifactId>
+  	<version>LATEST</version>
+  </dependency>
+   <dependency>
+   	<groupId>io.opentracing</groupId>
+   	<artifactId>opentracing-impl-java8</artifactId>
+   	<version>0.16.0</version>
+   </dependency>
+   
+<!-- OpenTracing kafka inject and extract https://github.com/opentracing-contrib/java-kafka-client#interceptors-based-solution -->
+   <dependency>
+    <groupId>io.opentracing.contrib</groupId>
+    <artifactId>opentracing-kafka-client</artifactId>
+    <version>LATEST</version>
+	</dependency>
+   
+ <!-- Jaeger is a specific tracer -->
+    <dependency>
+    <groupId>io.jaegertracing</groupId>
+    <artifactId>jaeger-micrometer</artifactId>
+    <version>LATEST</version>
+</dependency>
+   <dependency>
+    <groupId>io.jaegertracing</groupId>
+    <artifactId>jaeger-client</artifactId>
+    <version>LATEST</version>
+    </dependency>
+    
+ <!-- Misc -->
+    <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>LATEST</version>
+   </dependency>
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-log4j12</artifactId>
+       <version>LATEST</version>
+   </dependency>
+   <dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>LATEST</version>
+</dependency>
+  </dependencies>
+</project>
