@@ -1,0 +1,7 @@
+FROM java:8
+WORKDIR /
+ADD consumer.jar consumer.jar
+EXPOSE 8080
+EXPOSE 1235
+CMD java -jar consumer.jar
+

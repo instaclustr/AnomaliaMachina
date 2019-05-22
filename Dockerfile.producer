@@ -1,0 +1,7 @@
+FROM java:8
+WORKDIR /
+ADD producer.jar producer.jar
+EXPOSE 8080
+EXPOSE 1235
+CMD java -DproducerThreads=1 -DrampTime=120 -DloadTime=60 -DmaxID=1000000 -jar producer.jar
+
