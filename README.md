@@ -1,5 +1,5 @@
-# Anomalia Machina
-Massively Scalable Anomaly Detection with Apache Kafka, Cassandra and Kubernetes - final code for **Instaclustr's Anomalia Machina Blog series**:
+# Anomalia Machina - Massively Scalable Anomaly Detection with Apache Kafka, Cassandra and Kubernetes
+This is the final example code for the demonstration Anomaly Detection pipeline for **Instaclustr's Anomalia Machina Blog series**:
 
 * [Anomalia Machina 1 - Introduction](https://www.instaclustr.com/anomalia-machina-1-massively-scalable-anomaly-detection-with-apache-kafka-and-cassandra/)
 * [Anomalia Machina 4 - Prototype](https://www.instaclustr.com/anomalia-machina-4-prototype-massively-scalable-anomaly-detection-apache-kafka-cassandra/)
@@ -32,6 +32,8 @@ To deploy and run the application:
 * Deploy the consumer using the deploy_consumer.sh script
 * Look at the prometheus metrics in a broswer (you'll need to copy a pubic IP address of one of the Kubernetes worker nodes from the AWS console into your browser), e.g. 1.2.3.4:30123
 * The producer load and consumers can be scaled by increasing the number of Kubernetes worker nodes and increasing the number of pods for producers and consumers.  Some tuning of the parameters in AnomaliaProperties.java will be required to ensure optimal throughput. 
+
+Note that the Prometheus instrumentation is present and used in the final Kubernetes production environment. However, the OpenTracing/Jaeger tracing instrumentation is present but unused in the Kubernetes environment (you would have to run a Jaeger Operator to use it).
 
 ## Instaclustr Open Source Project Status: SAMPLE
 - for further information see: https://www.instaclustr.com/support/documentation/announcements/instaclustr-open-source-project-status/
