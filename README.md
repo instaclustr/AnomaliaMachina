@@ -30,7 +30,7 @@ To deploy and run the application:
 * Deploy Prometheus using the deploy_prometheus.sh script
 * Deploy the producer using the deploy_producer.sh script
 * Deploy the consumer using the deploy_consumer.sh script
-* Look at the prometheus metrics in a broswer (you'll need to copy an IP address of one of the Kubernetes worker nodes from the AWS console into your browser), e.g. http://1.2.3.4:30123
+* Look at the prometheus metrics in a broswer (you'll need to copy a pubic IP address of one of the Kubernetes worker nodes from the AWS console into your browser), e.g. 1.2.3.4:30123
 * The producer load and consumers can be scaled by increasing the number of Kubernetes worker nodes and increasing the number of pods for producers and consumers.  Some tuning of the parameters in AnomaliaProperties.java will be required to ensure optimal throughput. 
 
 ## Instaclustr Open Source Project Status: SAMPLE
