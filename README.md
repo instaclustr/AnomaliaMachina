@@ -15,7 +15,7 @@ Massively Scalable Anomaly Detection with Apache Kafka, Cassandra and Kubernetes
 For the design and more detailed instructions see the blogs (above). Here are the basic steps.
 
 To run the Anomaly Detection pipeline you need to have the following configured and running (all on AWS):
-* Instaclustr Kafka and Cassandra clusters (for Cassandra, no authentication)
+* Instaclustr [Kafka](https://www.instaclustr.com/solutions/managed-apache-kafka/) and [Cassandra](https://www.instaclustr.com/solutions/managed-apache-cassandra/) clusters (for Cassandra, no authentication)
 * Kubernetes running in the same region as the Kafka and Cassandra clusters (E.g. On AWS use EKS)
 * Edit KafkaProperties.java with the Instaclustr Kafka cluster credentials
 * Edit AnomaliaProperties.jave with the Instaclustr Provisioning API credentials
