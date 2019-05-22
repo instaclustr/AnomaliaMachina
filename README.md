@@ -16,6 +16,8 @@ For the design and more detailed instructions see the blogs (above). Here are th
 
 To run the Anomaly Detection pipeline you need to have the following configured and running (all on AWS):
 * Instaclustr [Kafka](https://www.instaclustr.com/solutions/managed-apache-kafka/) and [Cassandra](https://www.instaclustr.com/solutions/managed-apache-cassandra/) clusters (for Cassandra, no authentication)
+* connect to the Cassandra cluster using cqlsh, and create the Cassandra keyspace and table (CQL in CassandraClient.java)
+* Kafka auto topic creation turned on (so you need to run the producer before the consumer, see below)
 * Kubernetes running in the same region as the Kafka and Cassandra clusters (E.g. On AWS use EKS)
 * Edit KafkaProperties.java with the Instaclustr Kafka cluster credentials
 * Edit AnomaliaProperties.jave with the Instaclustr Provisioning API credentials
